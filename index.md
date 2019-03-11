@@ -1,7 +1,7 @@
 Homework 1: ggplot2
 ================
 Kaisa Roots
-2019-03-04
+2019-03-11
 
 ``` r
 library(ggplot2)
@@ -42,17 +42,20 @@ ggplot(data = mpg) +
 
 ![](index_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-  - Shape A continuous variable can not be mapped to shape
+  - Shape
 
-<!-- end list -->
+A continuous variable can not be mapped to shape
 
 ``` r
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ , y = hwy))
 ```
 
-![](index_files/figure-gfm/unnamed-chunk-4-1.png)<!-- --> - Shape with
-factor
+![](index_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+  - Shape with factor
+
+<!-- end list -->
 
 ``` r
 ggplot(data = mpg) +
@@ -80,7 +83,7 @@ Stroke aesthetic can only be used for shapes that have a border (like
 
 ``` r
 ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ , y = hwy), shape = 24, color = "#FFFF00" , fill = "green", size = 5, stroke = 1)
+  geom_point(mapping = aes(x = displ , y = hwy), shape = 24, color = "green" , fill = "#FFFF00", size = 5, stroke = 2)
 ```
 
 ![](index_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
